@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<link rel="stylesheet" href="mystyle.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<title>Login/Signup</title>
+<style>
+	.container {
+		width: 50%;
+		height: 50%;
+		padding-top: 10px;
+		margin-left: 30%;
+  
+  
+}
+	 .border {
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    
+
+  }
+	div {
+    width: 450px;
+	padding:25px;
+    position: center;
+    margin-top: 50;
+	margin-left: 820;
+	}
+	button {
+	background-color: #4CAF50;
+    color: white;
+	border: none;
+    cursor: pointer;
+	margin-left: 200;
+	padding :9px;
+	}
+	button1 {
+	background-color: #4CAF50;
+    color: white;
+	border: none;
+    cursor: pointer;
+	margin-left: 10;
+	padding :9px;
+	}
+	
+</style>
+</head>
+<body>
+	  <font size=8><center>Sign up</center></font>
+	
+	<div class="container">
+	 
+	 <span class="border border-dark">  
+		
+		<hr>
+		<form action="loginsignupphp.php" method="post">
+		<label>Email_Address : </label> 
+		<input type="Text" placeholder="Enter Email" name="Email" required ><br><br>
+		<label>Phone_Number : </label> 
+		<input type="Phonenumber" placeholder="Enter Ph.No." name="Phonenumber" required ><br><br>
+		<label>Password : </label> 
+		<input type="Password" placeholder="Enter Password." name="Password" required >
+		<br><br>
+		<input type="submit" value="Submit">
+        </form>
+        <hr><br>
+        Already have an account  <button1 type="button" onclick="window.location.href='../login/login.html'">Login</button1>
+        </span>
+	</div>
+	
+	
+        </body>
+</html>
